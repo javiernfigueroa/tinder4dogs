@@ -1,5 +1,5 @@
 import dogs from "/data.js";
-import Dog from "./Dog.js";
+import Dog from "/Dog.js";
 
 const container = document.getElementById("content-container");
 const like_btn = document.getElementById("like");
@@ -46,13 +46,13 @@ function getNewDog() {
         dogIndex += 1;
       } else {
         document.body.innerHTML = `<div class='endingPage'>
-      <h1>No dogs left</h1>
-       <p>You liked <span class='likeWord'>${likedDogs} ${
-          likedDogs > 1 ? "dogs" : "dog"
-        }</span> and disliked <span class='dislikeWord'>${disLikedDogs} ${
-          disLikedDogs > 1 ? "dogs" : "dog"
+      <h1>No hay mas perritos</h1>
+       <p>Te gustaron: <span class='likeWord'>${likedDogs} ${
+          likedDogs > 1 ? "perritos" : "perritos"
+        }</span> y no te gustaron <span class='dislikeWord'>${disLikedDogs} ${
+          disLikedDogs > 1 ? "perritos" : "perritos"
         }</span></p>
-       <p>Thank you for your experience.You can go back if you want to repeat or change your choice by pressing >>><a href='/index.html'>this</a><<<<
+       <p>Gracias por participar en la prueba de esta app, puedes volver haciendo click >>><a href='/index.html'>aqui</a><<<<
       </div>`;
       }
       currentDog = new Dog(dogs[dogIndex]);

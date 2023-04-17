@@ -44,7 +44,7 @@ body{
 .info{
   position: absolute;
   left: 28.34px;
-  top: 650.36px;
+  top: 600.36px;
   color: #F8F8F8;
 }
 .dog-container h1{
@@ -54,7 +54,7 @@ body{
 .dog-container p{
   margin-top: 5px;
   padding: 0 0.3em;
-  color: #B7B7B7;
+  color: #F8F8F8;
   font-size: 1.5rem;
   line-height: 1.2em;
 }
